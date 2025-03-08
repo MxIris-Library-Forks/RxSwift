@@ -105,6 +105,8 @@ final class CompletableAndThenTest_ : CompletableAndThenTest, RxTestCase {
     ("testCompletableCompleted_CompletableCompleted", CompletableAndThenTest.testCompletableCompleted_CompletableCompleted),
     ("testCompletableError_CompletableCompleted", CompletableAndThenTest.testCompletableError_CompletableCompleted),
     ("testCompletableCompleted_CompletableError", CompletableAndThenTest.testCompletableCompleted_CompletableError),
+    ("testCompletable_FirstCompletableNotRetainedBeyondCompletion", CompletableAndThenTest.testCompletable_FirstCompletableNotRetainedBeyondCompletion),
+    ("testCompletable_FirstCompletableNotRetainedBeyondFailure", CompletableAndThenTest.testCompletable_FirstCompletableNotRetainedBeyondFailure),
     ("testCompletableEmpty_SingleCompleted", CompletableAndThenTest.testCompletableEmpty_SingleCompleted),
     ("testCompletableCompleted_SingleNormal", CompletableAndThenTest.testCompletableCompleted_SingleNormal),
     ("testCompletableError_SingleNormal", CompletableAndThenTest.testCompletableError_SingleNormal),
@@ -1657,6 +1659,8 @@ final class ObservableTest_ : ObservableTest, RxTestCase {
     ("testAsObservable_hides", ObservableTest.testAsObservable_hides),
     ("testAsObservable_never", ObservableTest.testAsObservable_never),
     ("testSubscribeWithNext", ObservableTest.testSubscribeWithNext),
+    ("testDeferredFactoryClosureLifetime", ObservableTest.testDeferredFactoryClosureLifetime),
+    ("testObservableFactoryClosureLifetime", ObservableTest.testObservableFactoryClosureLifetime),
     ] }
 }
 
